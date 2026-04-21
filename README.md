@@ -1,104 +1,99 @@
-# CoreBuild Skills
+# CoreBuild Skills — Claude Code Skills Collection
 
-Coleção de skills para Claude Code / AI coding agents, curada pela CoreBuild.
+**81 skills curadas** para Claude Code / AI coding agents.
+Fonte única de verdade para todas as skills usadas em projetos CoreBuild.
 
 ---
 
-## 📦 Conteúdo
+## 🚀 Como usar
 
-### `frontend-design/` — by [Anthropic official](https://github.com/anthropics/skills)
-Skill oficial da Anthropic para design de frontend. Guia Claude Code em decisões de design visual, hierarchy, spacing, color theory e padrões modernos.
-
-### `ui-skills/` — by [ibelick](https://github.com/ibelick/ui-skills)
-Pequenas skills focadas em fundamentos UI/UX:
-- **baseline-ui** — design system fundamentals
-- **fixing-accessibility** — a11y audit/fixes
-- **fixing-metadata** — meta tags / SEO
-- **fixing-motion-performance** — animation perf
-
-### `ui-ux-pro-max-skill/` — by [nextlevelbuilder](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)
-Antigravity Kit: toolkit AI-powered de design intelligence.
-Search databases para UI styles, color palettes, font pairings, chart types, UX guidelines.
-
-**Uso principal:**
+**Clone diretamente para o folder de skills do Claude Code:**
 ```bash
-python3 src/ui-ux-pro-max/scripts/search.py "<query>" --domain style
+git clone https://github.com/CoreBuildPt/Skills.git ~/.claude/skills
 ```
 
-**Domínios:** product · style · typography · color · landing · chart · ux
-**Stacks:** html-tailwind · react · nextjs · astro · vue · nuxtjs · svelte · swiftui · react-native · flutter · shadcn · jetpack-compose
-
-### `marketing-growth-skills/` — 50 skills Marketing · CRO · Dev workflow
-Coleção completa de skills de marketing, growth, copywriting e workflow de desenvolvimento.
-
-**Categorias principais:**
-
-**🎯 CRO & Conversion** (6 skills)
-- `form-cro` · `onboarding-cro` · `page-cro` · `paywall-upgrade-cro` · `popup-cro` · `signup-flow-cro`
-
-**✍️ Copywriting & Content** (7 skills)
-- `copywriting` · `copy-editing` · `content-strategy` · `writing-plans` · `writing-skills` · `social-content` · `email-sequence`
-
-**📊 SEO & Discovery** (5 skills)
-- `ai-seo` · `seo-audit` · `programmatic-seo` · `schema-markup` · `site-architecture`
-
-**💰 Pricing & Strategy** (5 skills)
-- `pricing-strategy` · `launch-strategy` · `free-tool-strategy` · `competitor-alternatives` · `product-marketing-context`
-
-**🎨 Advertising & Creative** (3 skills)
-- `ad-creative` · `paid-ads` · `ab-test-setup`
-
-**📧 Lead Gen & Email** (4 skills)
-- `cold-email` · `email-sequence` · `lead-magnets` · `referral-program`
-
-**🧠 Psychology & Research** (4 skills)
-- `marketing-psychology` · `customer-research` · `brainstorming` · `marketing-ideas`
-
-**🔁 Retention & Growth** (3 skills)
-- `churn-prevention` · `community-marketing` · `revops`
-
-**📱 Mobile & App** (2 skills)
-- `aso-audit` · `analytics-tracking`
-
-**🛠️ Dev Workflow** (10 skills)
-- `subagent-driven-development` · `dispatching-parallel-agents` · `executing-plans` · `writing-plans`
-- `test-driven-development` · `systematic-debugging` · `verification-before-completion`
-- `requesting-code-review` · `receiving-code-review` · `finishing-a-development-branch`
-- `using-git-worktrees` · `using-superpowers`
-
-**📞 Sales** (1 skill)
-- `sales-enablement`
+Alternativa: clonar noutro sítio e copiar as que quiseres:
+```bash
+git clone https://github.com/CoreBuildPt/Skills.git ~/skills-corebuild
+cp -r ~/skills-corebuild/copywriting ~/.claude/skills/
+```
 
 ---
 
-## 🚀 Como usar num projeto
+## 📦 Catálogo por categoria
 
-1. Clonar este repo no home folder:
-   ```bash
-   git clone https://github.com/CoreBuildPt/Skills ~/.claude/skills-corebuild
-   ```
+### 🎨 Design & UI
+- [`frontend-design`](./frontend-design) — Anthropic official: decisões de design visual
+- [`ui-skills`](./ui-skills) — baseline-ui · a11y · metadata · motion performance
+- [`ui-ux-pro-max-skill`](./ui-ux-pro-max-skill) — Antigravity Kit: search databases para UI/color/chart/typography
+- [`canvas-design`](./canvas-design) — canvas e SVG design
+- [`theme-factory`](./theme-factory) — temas e color schemes
+- [`brand-guidelines`](./brand-guidelines) — brand consistency
+- [`brand-identity`](./brand-identity) — identity design
 
-2. Claude Code detecta skills automaticamente em `~/.claude/skills/`
+### 🎯 CRO & Conversion
+- [`ab-test-setup`](./ab-test-setup) · [`form-cro`](./form-cro) · [`onboarding-cro`](./onboarding-cro) · [`page-cro`](./page-cro)
+- [`paywall-upgrade-cro`](./paywall-upgrade-cro) · [`popup-cro`](./popup-cro) · [`signup-flow-cro`](./signup-flow-cro)
 
-3. Copiar pastas/ficheiros relevantes conforme o projeto:
-   ```bash
-   # UI-focused projects
-   cp -r ~/.claude/skills-corebuild/ui-ux-pro-max-skill ~/.claude/skills/
+### ✍️ Copywriting & Content
+- [`copywriting`](./copywriting) · [`copy-editing`](./copy-editing) · [`content-strategy`](./content-strategy)
+- [`content-research-writer`](./content-research-writer) · [`social-content`](./social-content)
+- [`writing-plans`](./writing-plans) · [`writing-skills`](./writing-skills)
 
-   # Marketing/growth projects
-   cp ~/.claude/skills-corebuild/marketing-growth-skills/copywriting-SKILL.md ~/.claude/skills/
-   ```
+### 📧 Email & Lead Gen
+- [`cold-email`](./cold-email) · [`email-sequence`](./email-sequence) · [`lead-magnets`](./lead-magnets)
+- [`lead-research-assistant`](./lead-research-assistant) · [`referral-program`](./referral-program)
 
----
+### 📊 SEO & Discovery
+- [`ai-seo`](./ai-seo) · [`seo-audit`](./seo-audit) · [`programmatic-seo`](./programmatic-seo)
+- [`schema-markup`](./schema-markup) · [`site-architecture`](./site-architecture)
 
-## 🗺️ Roadmap
+### 💰 Pricing & Strategy
+- [`pricing-strategy`](./pricing-strategy) · [`launch-strategy`](./launch-strategy) · [`free-tool-strategy`](./free-tool-strategy)
+- [`competitor-alternatives`](./competitor-alternatives) · [`product-marketing-context`](./product-marketing-context)
+- [`developer-growth-analysis`](./developer-growth-analysis)
 
-- [ ] Skill custom de design references (baseada em impeccable.style)
-- [ ] Skill Portuguese/Spanish SEO (BLABLABOAT specific)
-- [ ] Skill Next.js + Prisma + Postgres boilerplate
-- [ ] Skill charter/tourism booking UX (BLABLABOAT learnings)
+### 🎨 Advertising & Creative
+- [`ad-creative`](./ad-creative) · [`paid-ads`](./paid-ads) · [`competitive-ads-extractor`](./competitive-ads-extractor)
+
+### 🧠 Psychology & Research
+- [`marketing-psychology`](./marketing-psychology) · [`customer-research`](./customer-research)
+- [`brainstorming`](./brainstorming) · [`marketing-ideas`](./marketing-ideas)
+
+### 🔁 Retention & Growth
+- [`churn-prevention`](./churn-prevention) · [`community-marketing`](./community-marketing) · [`revops`](./revops)
+
+### 📱 Mobile & Analytics
+- [`aso-audit`](./aso-audit) · [`analytics-tracking`](./analytics-tracking)
+
+### 🛠️ Dev Workflow
+- [`subagent-driven-development`](./subagent-driven-development) · [`dispatching-parallel-agents`](./dispatching-parallel-agents)
+- [`executing-plans`](./executing-plans) · [`writing-plans`](./writing-plans)
+- [`test-driven-development`](./test-driven-development) · [`systematic-debugging`](./systematic-debugging)
+- [`verification-before-completion`](./verification-before-completion)
+- [`requesting-code-review`](./requesting-code-review) · [`receiving-code-review`](./receiving-code-review)
+- [`finishing-a-development-branch`](./finishing-a-development-branch) · [`using-git-worktrees`](./using-git-worktrees)
+- [`using-superpowers`](./using-superpowers) · [`changelog-generator`](./changelog-generator)
+- [`mcp-builder`](./mcp-builder) · [`skill-creator`](./skill-creator) · [`skill-share`](./skill-share)
+- [`webapp-testing`](./webapp-testing) · [`langsmith-fetch`](./langsmith-fetch)
+
+### 📞 Sales & Comms
+- [`sales-enablement`](./sales-enablement) · [`internal-comms`](./internal-comms) · [`meeting-insights-analyzer`](./meeting-insights-analyzer)
+
+### 🛠️ Productivity & Utilities
+- [`file-organizer`](./file-organizer) · [`invoice-organizer`](./invoice-organizer)
+- [`tailored-resume-generator`](./tailored-resume-generator) · [`domain-name-brainstormer`](./domain-name-brainstormer)
+- [`raffle-winner-picker`](./raffle-winner-picker) · [`image-enhancer`](./image-enhancer)
+- [`video-downloader`](./video-downloader) · [`twitter-algorithm-optimizer`](./twitter-algorithm-optimizer)
+
+### 🏭 Maker & Manufacturing
+- [`3d-printing`](./3d-printing) · [`laser-cut-engrave`](./laser-cut-engrave)
+
+### 📦 Business & Ops
+- [`crm-builder`](./crm-builder) · [`slack-gif-creator`](./slack-gif-creator)
 
 ---
 
 ## 📜 Licença
-Cada sub-skill mantém a sua licença original. Ver LICENSE files respetivos dentro de cada pasta.
+Cada sub-skill mantém a sua licença original (ver ficheiros LICENSE respetivos).
+Skills da Anthropic seguem [Anthropic License](https://github.com/anthropics/skills).
